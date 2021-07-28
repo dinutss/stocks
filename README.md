@@ -6,7 +6,7 @@
 
 1) ```.../info?stock_symbol=<stock_symbol>``` — get information about company.
    
-#### Example: https://dinutss.pythonanywhere.com/info?stock_symbol=AAPL```
+#### Example: https://dinutss.pythonanywhere.com/info?stock_symbol=AAPL
 
 2) ```.../history?stock_symbol=<stock_symbol>``` — get all historical market data
    
