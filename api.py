@@ -40,7 +40,7 @@ def history_interval():
     try:
         stock_symbol = get_string_param('stock_symbol')
         start = validate_date(get_string_param('start'), 'start')
-        end = validate_date(get_string_param('end'), 'start')
+        end = validate_date(get_string_param('end'), 'end')
         ticker_history = yf.download(stock_symbol, start=start, end=end, progress=False)
         ticker_history_dict = ticker_history.to_dict('index')
         ticker_history_dict = {K.strftime('%Y-%m-%d'): V for K, V in ticker_history_dict.items()}
